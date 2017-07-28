@@ -1,7 +1,9 @@
 -#!/bin/sh      
 ssh theotheu@node154.tezzt.nl <<EOF        
+# mkdir -p ~/jenkins-test
+ git clone https://github.com/theotheu/jenkins-test
  cd ~/jenkins-test
- git pull       
+ git fetch --all && git reset --hard && git pull
  npm install --production       
  pm2 restart all
  exit       
