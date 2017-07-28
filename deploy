@@ -1,6 +1,6 @@
 -#!/bin/sh      
 ssh theotheu@node154.tezzt.nl <<EOF        
- cd ~jenkins-test
+ cd ~/jenkins-test
  git pull       
  npm install --production       
  pm2 restart all
