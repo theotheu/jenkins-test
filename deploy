@@ -4,7 +4,7 @@ ssh theotheu@node154.tezzt.nl <<EOF
  git clone https://github.com/theotheu/jenkins-test
  cd ~/jenkins-test
  git fetch --all && git reset --hard && git pull
- npm install --production       
+ npm install
  pm2 start app.js
  pm2 restart all
  exit       
