@@ -1,0 +1,8 @@
+-#!/bin/sh      
+ssh theotheu@node154.tezzt.nl <<EOF        
+ cd /your-project-path  
+ git pull       
+ npm install --production       
+ pm2 restart all
+ exit       
+EOF
