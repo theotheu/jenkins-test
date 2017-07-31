@@ -1,0 +1,11 @@
+
+
+webnode1:
+  build: .
+  container_name: webNode1
+  restart: always
+  volumes:
+    - ./:/app
+# host : container
+  ports:
+    - "3000:3000"
