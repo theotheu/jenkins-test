@@ -1,6 +1,5 @@
--#!/bin/sh      
+#!/bin/sh      
 ssh theotheu@node154.tezzt.nl <<EOF        
-# mkdir -p ~/jenkins-test
  git clone https://github.com/theotheu/jenkins-test
  cd ~/jenkins-test
  git fetch --all && git reset --hard && git pull
