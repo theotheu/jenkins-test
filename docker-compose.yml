@@ -2,7 +2,7 @@
 
 webnode1:
   build: .
-  container_name: webNode1
+  container_name: webnode1
   restart: always
   privileged: true
   volumes:
