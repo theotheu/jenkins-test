@@ -2,8 +2,8 @@ pipeline {
   agent none
   stages {
     stage('Run container') {
-        label: "Run xxxx"
       steps {
+        label: "Run xxxx"
         node('Run container') {
           sh 'docker-compose  -f docker-compose.yml up -d'
         }
