@@ -1,18 +1,11 @@
 pipeline {
   agent none
   stages {
-    stage('Run container') {
-      steps {
-        label: "Run xxxx"
-        node('Run container') {
-          sh 'docker-compose  -f docker-compose.yml up -d'
-        }
-        
-      }
-    }
+    
 
     stage('first stage') {
       steps {
+          sh 'docker-compose  -f docker-compose.yml up -d'
         echo '1st stage, 1st step, nothing really'
       }
       post {
