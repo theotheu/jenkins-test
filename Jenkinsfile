@@ -31,7 +31,7 @@ pipeline {
         stage('Tear down') {
             steps {
                 echo 'Tear down....'
-//                sh 'docker rm -f webNode1'
+                sh 'docker rm -f webnode1'
             }
         }        
     }
