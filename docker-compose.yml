@@ -4,9 +4,9 @@ webnode1:
   build: .
   container_name: webnode1
   restart: always
-  privileged: true
+  #privileged: true
   volumes:
     - ./:/app
-# host : container
+  # ports: --> host : container
   ports:
     - "3000:3000"
