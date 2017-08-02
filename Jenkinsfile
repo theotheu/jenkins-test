@@ -1,14 +1,21 @@
-def myScript
+pipeline {
+    agent any
 
-
-stage "Run container"
-node {
-    sh 'docker-compose  -f docker-compose.yml up -d'
-}
-
-
-/*
-stage "Stop container"
-node {
-    sh 'docker-compose  -f docker-compose.yml down '
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
 }
