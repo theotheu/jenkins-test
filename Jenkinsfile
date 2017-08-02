@@ -6,9 +6,10 @@ pipeline {
             steps {
                 echo 'Building..'
 //                sh 'docker-compose  -f docker-compose.yml up -d'
-                sh 'id > /tmp/v'
-                sh 'docker-compose -v > /tmp/v'
-                sh 'pwd > /tmp/v'
+                sh 'echo Something new > /tmp/v'
+                sh 'id >> /tmp/v'
+                sh 'docker-compose -v >> /tmp/v'
+                sh 'pwd >> /tmp/v'
             }
         }
         stage('Test') {
