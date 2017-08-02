@@ -41,8 +41,9 @@ pipeline {
 
     stage("Run container"){
          steps {
-             label ""
+             
             node {
+                label ""
                 sh 'docker-compose  -f docker-compose.yml up -d'
             }
          }
