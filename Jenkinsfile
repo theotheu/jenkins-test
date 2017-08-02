@@ -38,6 +38,12 @@ pipeline {
   }
   
   stages {
+
+    stage "Run container"
+    node {
+        sh 'docker-compose  -f docker-compose.yml up -d'
+    }
+
     // At least one stage is required.
     stage("first stage") {
       // Every stage must have a steps block containing at least one step.
