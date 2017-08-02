@@ -9,8 +9,9 @@ pipeline {
                 sh 'id >> /tmp/v'
                 sh 'docker-compose -v >> /tmp/v'
                 sh 'pwd >> /tmp/v'
-                sh 'docker rm -f webNode1'
-                sh 'docker-compose -f docker-compose.yml up -d'
+//                sh 'docker rm -f webNode1'
+//                sh 'docker-compose -f docker-compose.yml up -d'
+                
             }
         }
         stage('Test') {
@@ -31,6 +32,4 @@ pipeline {
         }        
     }
 }
-
-
 
