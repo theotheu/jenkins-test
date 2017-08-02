@@ -40,6 +40,7 @@ pipeline {
     stage("first stage") {
       // Every stage must have a steps block containing at least one step.
       steps {
+        echo "1st stage, 1st step, nothing really"
         // You can use steps that take another block of steps as an argument,
         // like this.
         //
