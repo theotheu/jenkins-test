@@ -37,7 +37,7 @@ pipeline {
   
   stages {
     // At least one stage is required.
-    stage("first stage") {
+//    stage("first stage") {
       // Every stage must have a steps block containing at least one step.
 //      steps {
         // You can use steps that take another block of steps as an argument,
@@ -54,7 +54,7 @@ pipeline {
           // configured above. Well, once we fix the validation error!
 //          sh "mvn -version" 
 //        }
-      }
+//      }
       
       // Post can be used both on individual stages and for the entire build.
       post {
