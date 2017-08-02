@@ -1,3 +1,5 @@
+// @See https://gist.github.com/abayer/925c68132b67254147efd8b86255fd76
+
 // A Declarative Pipeline is defined within a 'pipeline' block.
 pipeline {
 
