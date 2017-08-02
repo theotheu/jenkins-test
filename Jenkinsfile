@@ -9,6 +9,7 @@ pipeline {
         
       }
     }
+    
     stage('first stage') {
       steps {
         echo '1st stage, 1st step, nothing really'
