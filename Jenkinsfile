@@ -1,9 +1,9 @@
 pipeline {
     agent any
 
-    environment { 
-        DOCKER_HOST = '127.0.0.1'
-    }
+    //environment { 
+        //DOCKER_HOST = '127.0.0.1'
+    //}
 
     stages {
         stage('Build') {
@@ -14,7 +14,7 @@ pipeline {
                 sh 'docker-compose -v >> /tmp/v'
                 sh 'pwd >> /tmp/v'
 //                sh 'docker rm -f webNode1'
-                bash 'docker-compose -f docker-compose.yml up -d'
+                sh 'docker-compose -f docker-compose.yml up -d'
                 
             }
         }
