@@ -4,7 +4,6 @@ pipeline {
     stage('Run container') {
       steps {
         node(label: 'Run container') {
-          label 'Run container'
           sh 'docker-compose  -f docker-compose.yml up -d'
         }
         
@@ -53,9 +52,7 @@ pipeline {
       }
     }
   }
-  environment {
-    FOO = 'BAR'
-  }
+
   post {
     always {
       deleteDir()
