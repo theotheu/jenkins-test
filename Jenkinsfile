@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('Run container') {
       steps {
-        node(label: 'Run container') {
+        node(label: '') {
           sh 'docker-compose  -f docker-compose.yml up -d'
         }
         
       }
     }
-    
+
     stage('first stage') {
       steps {
         echo '1st stage, 1st step, nothing really'
