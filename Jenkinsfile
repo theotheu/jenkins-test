@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-    label ''
-  }
+  agent none
   stages {
     stage('Run container') {
       steps {
