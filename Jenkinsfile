@@ -45,16 +45,16 @@ pipeline {
         //
         // But wait! Another validation issue! Two, actually! I didn't use the
         // right type for "time" and had a typo in "unit".
-        timeout(time: true, int: 'MINUTES') {
-          echo "We're not doing anything particularly special here."
-          echo "Just making sure that we don't take longer than five minutes"
-          echo "Which, I guess, is kind of silly."
+//        timeout(time: true, int: 'MINUTES') {
+//         echo "We're not doing anything particularly special here."
+//          echo "Just making sure that we don't take longer than five minutes"
+//          echo "Which, I guess, is kind of silly."
           
           // This'll output 3.3.3, since that's the Maven version we
           // configured above. Well, once we fix the validation error!
-          sh "mvn -version" 
-        }
-      }
+//          sh "mvn -version" 
+//        }
+//      }
       
       // Post can be used both on individual stages and for the entire build.
       post {
