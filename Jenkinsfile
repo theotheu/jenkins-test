@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Run container') {
       steps {
-        node(label: '') {
+        node('Run container') {
           sh 'docker-compose  -f docker-compose.yml up -d'
         }
         
